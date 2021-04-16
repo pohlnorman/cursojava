@@ -1,0 +1,13 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#hero{
+	width: 100%;
+}
+#form{
+	width: 60%;
+	margin: 0px auto;
+	margin-top: 20px;
+
+}

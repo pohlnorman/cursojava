@@ -1,0 +1,29 @@
+#container {
+  width: 1000px;
+  height: auto;
+  background-color: gray;
+}
+#grupo {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  float: left;
+}
+#numerohorizoltal {
+  width: 950px;
+  height: 50px;
+  background-color: greenyellow;
+  float: left;
+}
+#numerovertical {
+  width: 50px;
+  height: 650px;
+  background-color: hotpink;
+  float: left;
+}
+.seccion1 {
+  width: 100px;
+  height: 350px;
+  background-color: indianred;
+  float: left;
+}

@@ -1,0 +1,74 @@
+#contenedor {
+    width: 970px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    background-color: gray;
+}
+
+.nombre {
+    text-align: center;
+    display: inline-block;
+}
+
+.imgheader1 {
+    width: 100px;
+    background-color: white;
+    margin-left: 250px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.imgheader2 {
+    width: 100px;
+    background-color: white;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: inline-block;
+}
+
+#imagenes {
+    width: 970px;
+    margin-left: 35px;
+    margin-right: 35px;
+    display: block;
+}
+
+.boxborde {
+    width: auto;
+    background-color: yellow;
+    margin-top: 5px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px;
+}
+
+.fotoborde {
+    width: 140px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+.box {
+    width: auto;
+    background-color: yellowgreen;
+    margin-left: 0px;
+    margin-top: 5px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    padding: 15px;
+}
+
+.fotosinborde {
+    width: 140px;
+    background-color: yellowgreen;
+    vertical-align: middle;
+}
+
+.footer {
+    width: auto;
+    height: 20px;
+}
