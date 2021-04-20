@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a() {
+            var array = [];
+            var cant = prompt('Cuantos numeros tendra el array?', '');
+
+            for (i = 1; i <= cant; i++) {
+                var num = prompt('Ingrese el numero ' + i);
+                var entero = parseInt(num);
+                array.push(entero);
+            }
+            document.write(array);
+
+            for (i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    array[i] = 'Dojo';
+                }
+            }
+            document.write('<br>' + array);
+        }
+
+        a();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

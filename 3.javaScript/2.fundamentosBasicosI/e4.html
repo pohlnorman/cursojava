@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a() {
+            var array = [];
+            cant = prompt('Cuantos numeros tendra el array?');
+
+            for (i = 1; i <= cant; i++) {
+                var num = prompt('Ingrese numero ' + i, '');
+                var entero = parseInt(num);
+                array.push(entero);
+
+            }
+            var suma = 0;
+            for (i = 0; i < array.length; i++) {
+                suma = suma + array[i];
+            }
+            document.write('La suma es = ' + suma);
+
+        }
+
+        a();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

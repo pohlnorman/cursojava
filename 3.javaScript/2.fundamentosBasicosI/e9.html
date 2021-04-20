@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a() {
+            var array = [];
+            var array2 = [];
+            var cant = prompt('Cuantos numeros tendra el array?', '');
+
+            for (i = 1; i <= cant; i++) {
+                var num = prompt('Ingrese el numero ' + i);
+                var entero = parseInt(num);
+                array.push(entero);
+            }
+
+            for (i = 0; i < array.length; i++) {
+                array2[i] = Math.pow(array[i], 2);
+            }
+            document.write('Numeros ingresados: ' + array + '<br>' + 'resultado n * n: ' + array2);
+        }
+
+        a();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
