@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a() {
+            var array = [];
+            var array2 = [];
+            var cant = prompt('Cuantos palabras tendra el arreglo?', '');
+            var cante = parseInt(cant);
+            var suma = 0;
+
+            for (i = 1; i <= cante; i++) {
+                var num = prompt('Ingresa la palabra ' + i);
+                array.push(num);
+            }
+            document.write(array + '<br>');
+
+            for (i = 0; i < array.length - 1; i++) {
+                if (i == 0) {
+                    array2[i] = array[i];
+                }
+                var p = array[i].length;
+                array2[i + 1] = p;
+            }
+            return array2;
+        }
+        document.write(a());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a() {
+            var array = [];
+            var cant = prompt('Cuantos numeros tendra el arreglo?', '');
+
+            for (i = 1; i <= cant; i++) {
+                var num = prompt('Ingresa el numero ' + i);
+                var int = parseInt(num);
+                array.push(int);
+            }
+            document.write(array + '<br>');
+
+            for (i = 0; i < array.length; i++) {
+                var aux = 0;
+                if (array[i] < array[i + 1]) {
+                    aux = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = aux;
+                }
+                var menor = array[i];
+            }
+            document.write('Numero menor: ' + menor + ' Print' + '<br>');
+
+            for (i = 0; i < array.length; i++) {
+                var aux = 0;
+                if (array[i] > array[i + 1]) {
+                    aux = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = aux;
+                }
+                var mayor = array[i];
+            }
+            return ('numero mayor: ' + mayor + ' Return');
+        }
+        document.write(a());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a(x) {
+            document.write(x);
+            for (i = 0; i < x.length; i++) {
+                if (i == 0) {
+                    var aux;
+                    aux = x[0];
+                    x[0] = x[5];
+                    x[5] = aux;
+                }
+
+                if (i == 2) {
+                    var aux;
+                    aux = x[2];
+                    x[2] = x[3];
+                    x[3] = aux;
+                }
+            }
+            return ('<br>' + x);
+        }
+        document.write(a([1, 2, 3, 4, 5, 6]));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

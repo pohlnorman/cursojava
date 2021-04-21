@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a(x, y) {
+            document.write(x + '<br>');
+            document.write('multiplicado ' + y + ' veces' + '<br>')
+
+            for (i = 0; i < x.length; i++) {
+                x[i] = x[i] * y;
+            }
+            return x;
+        }
+        document.write(a([5, 8, 10], 3));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

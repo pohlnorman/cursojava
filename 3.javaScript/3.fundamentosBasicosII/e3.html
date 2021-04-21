@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function a() {
+            var array = [];
+            var cant = prompt('Cuantos numeros tendra el arreglo?', '');
+
+            for (i = 1; i <= cant; i++) {
+                var num = prompt('Ingresa el numero ' + i);
+                var int = parseInt(num);
+                array.push(int);
+            }
+            document.write(array + '<br>');
+
+            for (i = 0; i < array.length; i++) {
+                if (i == (array.length - 2)) {
+                    document.write('El penultimo numero es: ' + array[i] + '<br>');
+                }
+            }
+
+            for (i = 0; i < array.length; i++) {
+                if (array[i] % 2 != 0) {
+                    return ('El primer numero impar es: ' + array[i]);
+                }
+            }
+            return ('Este arreglo no tiene numeros impares');
+        }
+
+        document.write(a());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
