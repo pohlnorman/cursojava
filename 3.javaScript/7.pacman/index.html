@@ -48,6 +48,13 @@
             background-size: cover;
         }
         
+        div.ghost {
+            background: url("ghost.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
         div#pacman {
             background: url("pacman.gif");
             background-repeat: no-repeat;
@@ -65,9 +72,21 @@
             color: white;
             position: absolute;
             top: 0px;
-            left: 420px;
+            left: 480px;
             text-align: center;
             padding: 5px;
+        }
+        
+        div#scoreName {
+            border: 0px solid white;
+            width: 50px;
+            height: 20px;
+            color: white;
+            position: absolute;
+            top: 0px;
+            left: 400px;
+            text-align: center;
+            padding: 7px;
         }
     </style>
 </head>
@@ -76,7 +95,8 @@
     <div class="container">
         <div id="world"></div>
         <div id="pacman"></div>
-        <div id="score">100</div>
+        <div id="score"></div>
+        <div id="scoreName">Puntaje</div>
     </div>
 
 
@@ -91,7 +111,7 @@
             [2, 1, 2, 2, 1, 1, 2, 1, 1, 2],
             [2, 1, 1, 1, 1, 1, 2, 1, 1, 2],
             [2, 1, 1, 1, 1, 1, 2, 1, 1, 2],
-            [2, 1, 1, 1, 1, 1, 3, 1, 1, 2],
+            [2, 1, 1, 1, 1, 4, 3, 1, 1, 2],
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
         ];
 
@@ -114,6 +134,8 @@
                         output = output + "<div class='empty'></div>";
                     } else if (world[i][j] == 3) {
                         output = output + "<div class='cherry'></div>";
+                    } else if (world[i][j] == 4) {
+                        output = output + "<div class='ghost'></div>";
                     }
                 }
                 output = output + "\n</div>";
@@ -126,6 +148,8 @@
             document.getElementById('pacman').style.top = pacman.y * 40 + 'px';
             document.getElementById('pacman').style.left = pacman.x * 40 + 'px';
         }
+
+
 
         function displayscore() {
             document.getElementById('score').innerHTML = score;
@@ -159,6 +183,12 @@
             if (world[pacman.y][pacman.x] == 3) {
                 world[pacman.y][pacman.x] = 0
                 score = score + 50;
+                displayworld();
+                displayscore();
+            }
+            if (world[pacman.y][pacman.x] == 4) {
+                world[pacman.y][pacman.x] = 0
+                score = 0;
                 displayworld();
                 displayscore();
             }
