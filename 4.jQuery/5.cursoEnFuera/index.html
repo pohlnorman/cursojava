@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("img").hover(function() {
+                var rutasrc2 = $(this).attr('src-2')
+                console.log($(this).attr('src', rutasrc2));
+            }, function() {
+                var rutasrc = $(this).attr('src-3')
+                console.log($(this).attr("src", rutasrc));
+            });
+        })
+    </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Evolucion de personajes</h1>
+    <div class="container">
+        <div class="imagenes">
+            <img src="goku.jpg" src-2="goku2.jpg" src-3="goku.jpg" class="imagen" alt="">
+            <img src="naruto.jpg" src-2="naruto2.jpg" src-3="naruto.jpg" class="imagen" alt="">
+            <img src="oliver.jpg" src-2="oliver2.jpg" src-3="oliver.jpg" class="imagen" alt="">
+            <img src="pegaso.jpg" src-2="pegaso2.jpg" src-3="pegaso.jpg" class="imagen" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
