@@ -1,0 +1,10 @@
+body {
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+.image-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}

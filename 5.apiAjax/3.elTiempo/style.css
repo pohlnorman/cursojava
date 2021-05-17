@@ -1,0 +1,21 @@
+#container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#weather p {
+    text-align: center;
+}
+
+#weather form {
+    text-align: center;
+}
+
+#map {
+    margin-left: 100px;
+}
