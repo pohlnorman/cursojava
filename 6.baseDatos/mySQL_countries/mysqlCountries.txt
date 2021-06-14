@@ -1,0 +1,16 @@
+select countries.name, languages.language, languages.percentage from countries inner join languages on countries.code = languages.country_code
+where language = "slovene" order by percentage desc;
+
+select countries.name, count(cities.id) as ciudades from cities inner join countries on cities.country_id = countries.id group by name order by ciudades desc ;
+
+select name as 'ciudades de mexico', population from cities where country_id =136 and population >= 500000 order by population desc;
+
+select countries.name 'nombre', languages.language 'idioma', languages.percentage 'porcentaje' from countries inner join languages on countries.id = languages.country_id where languages.percentage >89 order by percentage desc;
+
+select * from countries where surface_area < 501 and population >100000;
+
+select * from countries where government_form like '%constitutional monarchy%' and capital > 200 and life_expectancy >75;
+
+select countries.name 'pais', cities.district 'distrito', cities.name 'ciudad', cities.population 'poblacion' from cities inner join countries on countries.id = cities.country_id where country_id=9  and cities.population > 500000 and cities.district like '%buenos aires%';
+
+select region 'region', count(name)'paises' from countries group by continent order by paises desc;

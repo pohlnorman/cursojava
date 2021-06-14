@@ -1,0 +1,14 @@
+
+use twitter;
+
+select * from faves where user_id=1;
+
+select * from users;
+
+insert into users (first_name, last_name, handle, birthday)
+values('Norman','Pohl','normanpohl','1982-11-18');
+-- inserte dos nuevos usuarios en la tabla users (id 6 y 7)
+
+UPDATE users SET created_at = now(), updated_at=now() WHERE id=6;
+DELETE FROM users WHERE id=7;
+-- elimino usuario con id 7
